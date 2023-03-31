@@ -3,6 +3,6 @@
 int main()
 {
 
-    printf("Auto");
+    printf("hello Guys. I am newbie Programmer");
     return 0;
 }
