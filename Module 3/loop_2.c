@@ -2,9 +2,9 @@
 int main()
 {
     int i;
-    for(i=1;i<=100;i=i+2)
+    for(i=1;i<=10;i=i+1)
     {
-        printf("I love you %d\n",i);
+        printf("Hello\n");
     }
     return 0;
 }
