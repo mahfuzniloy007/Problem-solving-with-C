@@ -1,14 +1,14 @@
 #include<stdio.h>
-void change_it(int *a,int n)
+void fun(int a[],int i,int n)
 {
-    int *ptr=&a[n-1];
-    *ptr=100;
-    for (int i = 0; i < n; i++)
+    if(i%2==0)
     {
         printf("%d ",a[i]);
     }
-    
+    if(i==n) return;
+    fun(a,i-1,n);
 }
+
 int main()
 {
     int n;
@@ -16,8 +16,8 @@ int main()
     int a[n];
     for (int i = 0; i < n; i++)
     {
-        scanf("%d",&a[i]);
+          scanf("%d",&a[i]);
     }
-    change_it(a,n);
+    fun(a,n-1,0);
     return 0;
 }
